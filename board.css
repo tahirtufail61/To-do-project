@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Liter", serif;
+}
+
+body {
+    background-color: black; 
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    width: 100vw;
+    justify-content: space-between;
+    color: white;
+}
+
+.headd{
+    display: flex;
+    align-items: center;
+
+}
+
+.logoimg {
+    width: 100px;
+    height: 50px; 
+    cursor: pointer;
+}
+
+.menuitems a{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.ri-add-box-fill{
+  padding: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icons2{
+    cursor: pointer;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.headd i{
+    padding-left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.trailbtn{
+    padding: 7px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.trailbtn:hover{
+    background-color: rgba(128, 128, 128, 0.815);
+    
+}
+
+.search-input{
+    padding: 5px;
+}
+
+.mainsection{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+}
+
+.mainl{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    height: 100%;
+    border-right: 0.2px solid rgba(255, 255, 255, 0.247);
+    
+}
+
+.mainl1{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.185);
+}
+
+.mainl1t{
+    padding-top: 5px;
+    padding-left: 10px;
+    color: white;
+}
+
+.mainl1img{
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.mainnn{
+    display: flex;
+    padding-left: 10px;
+}
+
+.mainl1t p{
+    font-size: 10px;
+}
+
+.ri-arrow-left-s-line{
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.ri-arrow-left-s-line:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.mainl2{
+    padding-top: 20px;
+}
+
+.mainl21{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(43, 41, 41);
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.596);
+}
+.mainl21:hover{
+    background-color: gray;
+}
+
+.mainl21 p{
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.mainl22{
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.596);
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.mainl22:hover{
+    background-color: gray;
+}
+
+.mainl22 p{
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.mainl23{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(78, 70, 70);
+}
+
+.mainr{
+    width: 75%;
+    height: 100%;
+}
+
+.mainrt{
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    border-bottom: 0.2px solid rgba(255, 255, 255, 0.24);
+}
+
+.mainrtimg{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.mainrttt{
+    display: flex;
+    padding-top: 40px;
+}
+
+.mainrtext{
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.mainrtbtn{
+    height: 34px;
+    width: 170px;
+    margin-top: 50px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.mainrtbtn:hover{
+    background-color: rgba(128, 128, 128, 0.815);
+    
+}
+
+.mainrtext h4{
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.container {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+select, input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.board-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+.board {
+    background: #9b4f69;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.board::after {
+    content: '\002B';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    color: black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+.create-board {
+    background: #f0f0f0;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
